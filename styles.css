@@ -1,40 +1,75 @@
 body {
 	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
 }
 
 .postcard {
 	background: white;
+	padding: 20px;
 	width: 400px;
-	height: 300px;
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.postcard-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.postcard-header h1 {
+	font-size: 20px;
+	margin: 0;
+}
+
+.postcard-header img {
+	width: 50px;
+	height: auto;
+}
+
 .postcard-body {
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
-	padding: 10px;
-	width: 100%;
-}
-.postcard-footer {
-	text-align: center;
-	width: 100%;
-	margin-top: auto;
-	padding: 10px;
 }
 
-.send-button {
-	background-color: #333; /* Color oscuro */
+.body-left {
+	width: 50%;
+}
+
+.body-right {
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+}
+
+.body-right input {
+	margin-bottom: 5px;
+	padding: 5px;
+	font-size: 14px;
+}
+
+.postcard-footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+}
+
+.send-btn {
+	background: blue;
 	color: white;
-	padding: 10px 20px;
 	border: none;
+	padding: 8px 12px;
+	font-size: 14px;
 	border-radius: 5px;
 	cursor: pointer;
+	transition: background 0.3s;
 }
 
-.send-button:hover {
-	background-color: #222;
+.send-btn:hover {
+	background: blue;
 }
